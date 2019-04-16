@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie-edge">
+    <!-- css de boostrap -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <style>
+        .border{
+            background-color: gray;
+        }
+        .border1{
+            background-color: red; 
+        }
+        .border2{
+            background-color: blue;
+        }
+        .border3{
+            background-color: green;
+        }
+        .border4{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+
+<!--
+    <nav class="navbar navbar-expand-sm bg-warning">
+        <ul class="navbar-nav">
+            <li class="nav-item"><a href="#" class="nav-link">Link 1</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Link 2</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Link 3</a></li>
+        </ul>    
+    </nav>
+-->
+   
+   <form action="accion.php" method="POST">
+        <div class="form-check">
+           <label class="form-check-label" for="check">
+               <input type="checkbox" class="form-check-input">Opcion 1
+           </label>
+           <label class="form-check-label" for="check">
+               <input class="form-check-input" type="checkbox">Opcion 2
+           </label>
+        </div>
+        
+        
+        <label class="radio-inline">
+            <input type="radio" name="gusto">
+        </label>
+    </form>
+    
+   <div class="progress" style="height: 30px;">
+       <div class="progress-bar w-75 bg-info progress-bar-striped progress-bar-animated">
+           75%
+       </div>
+   </div>
+   
+    <!-- al parecer data-dismiss llama a la clase padre para cerrar -->
+    <p class="alert alert-info alert-dismissable">esto tambien es un alert
+        <button type="button" class="close" data-dismiss="alert">&times;</button>
+    </p>
+    <!-- Alerta con cierre -->
+    <p class="alert alert-success alert-dismissable">
+        <button type="button" class="close" data-dismiss="alert">&times;</button>
+        <strong>Felicidades</strong> la operacion concreto satisfactoriamente.
+    </p>
+    
+    <!--xs - sm - md - lg - xl
+        fluyd -->
+    <!-- Texto continuo! text-nowrap -->
+
+    <div class="container border" style="height:500px;">
+        <!-- justify-content- "start/center/end/between/around(los distribulle dentro del row)" -->
+        <div class="row justify-content-center border1"> 
+            <div class="col-3 border2">Contenido 1</div>
+            <div class="col-3 border3">Contenido 2</div>
+            <div class="col-3 border4">Contenido 3</div>
+        </div>
+
+    </div>
+
+        <div class="row border1" style="height:300px;">
+            <div class="col-3 border2 align-self-center">
+                <p>UNO</p>
+            </div>
+            <div class="col-3 border3 align-self-start">
+                <p>DOS</p>
+            </div>
+            <div class="col-3 border4 align-self-end">
+                <p>TRES</p>
+            </div>
+        </div>
+
+        <!-- primary, secondary, dark, light, danger, warning, success, info, white -->
+
+    
+    <script src="js/funciones.js"></script>
+    <!-- Jquery.js, popper.js y bootstrap.js -->
+    <script src="js/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
